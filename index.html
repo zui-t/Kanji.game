@@ -1,12 +1,71 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-<meta charset="UTF-8"> 
-<title>はじめてのウェブサイト</title> 
-</head> 
-<body> 
-<h1>こんにちは！</h1> 
-<p>これは僕が初めて公開したウェブサイトです。</p> 
-<p>世界中から見えてるかな？</p> 
-</body> 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢字書き取りクイズ - スタート</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #e6f7ff; /* 明るい青の背景 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .start-container {
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            width: 90%;
+        }
+        h1 {
+            color: #0056b3; /* 濃い青 */
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        #start-button {
+            padding: 15px 35px;
+            font-size: 22px;
+            background-color: #28a745; /* 緑色 */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            box-shadow: 0 4px #1e7e34;
+        }
+        #start-button:hover {
+            background-color: #218838;
+        }
+        #start-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="start-container">
+        <h1>🎓 漢字書き取りクイズ</h1>
+        <p>表示された漢字を書き取るクイズです<br>「はじめる」ボタンを押してスタート！</p>
+        
+        <a href="kanji_quiz.html">
+            <button id="start-button">
+                👉 はじめる
+            </button>
+        </a>
+    </div>
+
+</body>
 </html>
